@@ -1,13 +1,28 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.3;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /*color*/
+  --white: #fefefe;
+  --black: #0a0a0a;
+  --white-540: rgba(254, 254, 254, 0.54);
+  --dark-pink: #e22e78;
+  --pink-hover: #f75497;
+  --pink: #ff77b3;
+  --light-pink: #ffa1cb;
+  --peach: #ffa6c6;
+  --hover-for-button: #842d84;
+  --blue: #42edff;
+  --blue-pm: #4285f4;
+  --bright-navy: #2840b3;
+  --footer-navy: #0056b3;
+  --green-pm: #34a853;
+  --yellow-pm: #fbbc04;
+  --red-pm: #ea4335;
+  --pink: #ff77b3;
+  --bright-navy: #2840b3;
+  --gradient-main: linear-gradient(359deg, #42edff 0%, #ffb9fe 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,11 +37,4 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-}
-
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
 }
