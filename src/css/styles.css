@@ -4,15 +4,24 @@
   | default @import url()
   |============================
 */
+/* Normalize styles */
+@import 'modern-normalize';
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./home.css');
+@import url('./the-sweet-experience.css');
+@import url('./how-to-play.css');
+@import url('./candy-kingdoms.css');
+@import url('./boosters-combos.css');
+@import url('./puzzle-paradise.css');
+@import url('./screenshots.css');
+@import url('./faq.css');
+@import url('./privacy-policy.css');
+@import url('./cookies-policy.css');
+@import url('./terms-and-conditions.css');
 @import url('./footer.css');
