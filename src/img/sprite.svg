@@ -30,5 +30,8 @@
     <symbol id="icon-plus" viewBox="0 0 33 32">
       <path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="4.9231" d="M2.588 16h27.077M16.126 2.462v27.077"></path>
     </symbol>
+    <symbol id="icon-minus" viewBox="0 0 200 32">
+      <path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="32" d="M16.82 16h176"></path>
+    </symbol>
   </defs>
 </svg>

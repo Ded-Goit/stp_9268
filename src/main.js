@@ -1,2 +1,2 @@
-import './js/burgerMenu';
-import './js/swiper';
+//import './js/burgerMenu';
+//import './js/swiper';

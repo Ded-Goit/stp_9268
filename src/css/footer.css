@@ -1,9 +1,136 @@
-.icon {
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--bright-navy);
+  background-image: url('../img/footer/caramel_wave_mob.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin-bottom: 0;
+  padding: 24px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url('../img/footer/caramel_wave_mob@2x.png');
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 256px;
+  text-align: center;
+  justify-content: center;
+}
+
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 288px;
+  margin: 32px 0;
+  text-align: center;
+}
+.policy-item:hover {
+  .policy-link {
+    color: var(--footer-navy);
+  }
+}
+.footer-text,
+.policy-link,
+.social-text {
+  color: var(--white);
+}
+.social {
+  flex-direction: column;
+}
+.social-list {
+  display: flex;
+  margin: 0 auto;
+  gap: 8px;
+  text-align: center;
+  justify-content: center;
+}
+.social-text {
+  margin-bottom: 8px;
+}
+.social-item {
   width: 40px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
   fill: var(--bright-navy);
 }
 /*color: var(--bright-navy);*/
-.icon:hover {
+.social-icon:hover {
   fill: var(--white);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-image: url('../img/footer/caramel_wave_desk.png');
+    min-height: auto;
+  }
+  .footer-text-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .policy-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 176.5px;
+    width: auto;
+    margin: 32px auto;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    margin-bottom: 8px;
+  }
+  .social-list {
+    gap: 32px;
+  }
+  .social-text {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  .social-item {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Retina  */
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url('../img/footer/caramel_wave_desk@2x.png');
+  }
 }
