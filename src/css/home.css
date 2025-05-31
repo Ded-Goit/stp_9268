@@ -60,6 +60,11 @@
   max-width: 249px;
   margin: 0 auto;
   white-space: nowrap;
+  transition: border-color 200ms ease-in-out;
+}
+
+.play-link:hover {
+  border-color: var(--bright-navy);
 }
 
 .wrapper-link {
