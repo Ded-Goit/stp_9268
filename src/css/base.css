@@ -40,3 +40,7 @@ main {
   flex-grow: 1;
   background: var(--gradient-main);
 }
+
+html {
+  scroll-behavior: smooth;
+}
