@@ -14,12 +14,15 @@
 
 @media screen and (min-width: 1200px) {
   .container-home {
-    background-image: image-set(
-      url('/img/home/home-desktop.png') 1x,
-      url('/img/home/home-desktop@2x.png') 2x
-    );
+    background-image: url('/img/home/home-desktop.png');
     padding-left: 90px;
     padding-top: 30px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .container-home {
+      background-image: url('/img/home/home-desktop@2x.png');
+    }
   }
 
   #home {
