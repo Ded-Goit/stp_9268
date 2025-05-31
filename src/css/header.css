@@ -28,7 +28,7 @@
   .burger-menu {
     display: none;
   }
-  picture img {
+  .container-header img {
     width: 66px;
   }
   .navigation {

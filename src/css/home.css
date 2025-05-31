@@ -1,15 +1,19 @@
 #home {
   padding-top: 16px;
+  scroll-margin-top: 40px;
 }
 .container-home {
-  background-image: image-set(
-    url('/img/home/home-mobile.png') 1x,
-    url('/img/home/home-mobile@2x.png') 2x
-  );
+  background-image: url('/img/home/home-mobile.png');
   background-size: cover;
   padding-bottom: 24px;
   border-radius: 33px;
   box-shadow: -1px 3px 20px 5px var(--pink-hover);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .container-home {
+    background-image: url('/img/home/home-mobile@2x.png');
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -17,6 +21,10 @@
     background-image: url('/img/home/home-desktop.png');
     padding-left: 90px;
     padding-top: 30px;
+  }
+
+  #home {
+    scroll-margin-top: 100px;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

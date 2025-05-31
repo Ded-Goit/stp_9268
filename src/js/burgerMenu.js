@@ -11,3 +11,16 @@ closeBtnEl.addEventListener('click', () => {
   wrapperMenuEl.dataset.visible = 'close';
   document.body.style.overflow = ''; 
 });
+
+const anchorLinks = document.querySelectorAll('.wrapper-menu a[href^="#"]');
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    wrapperMenuEl.dataset.visible = 'close';
+
+    setTimeout(() => {
+      delete wrapperMenuEl.dataset.visible;
+      document.body.style.overflow = '';
+    }, 300);
+  });
+});
