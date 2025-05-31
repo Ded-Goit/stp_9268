@@ -1,5 +1,82 @@
 <header class="header">
   <div class="container">
-    <p>Header</p>
+    <div class="container-header">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/header/logo-desktop.png   1x,
+            /img/header/logo-desktop2x.png 2x
+          "
+          sizes="66px"
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /img/header/logo-mobile.png   1x,
+            /img/header/logo-mobile2x.png 2x
+          "
+        />
+        <img src="/img/header/logo-mobile.png" alt="logo" width="30px" />
+      </picture>
+      <button type="button" class="burger-menu" data-action="open">
+        <svg class="burger-menu-icon" width="24px" height="20px">
+          <use href="/img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="list-navigation">
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Home</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">The Sweet Experience</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">How to Play</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Candy Kingdoms</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Boosters & Combos</a>
+          </li>
+        </ul>
+        <ul class="list-navigation-two">
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Puzzle Paradise</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Daily Treats</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">Screenshots</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#" class="item-nav-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="wrapper-menu" data-visible>
+        <div class="content-menu">
+          <button type="button" class="close-button" data-action="close">
+            <svg class="close-button-icon" width="22px" height="22px">
+              <use href="/img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list-menu">
+            <li class="item-list-menu"><a href="#">Home</a></li>
+            <li class="item-list-menu"><a href="#">The Sweet Experience</a></li>
+            <li class="item-list-menu"><a href="#">How to Play</a></li>
+            <li class="item-list-menu"><a href="#">Candy Kingdoms</a></li>
+            <li class="item-list-menu"><a href="#">Boosters & Combos</a></li>
+            <li class="item-list-menu"><a href="#">Puzzle Paradise</a></li>
+            <li class="item-list-menu"><a href="#">Daily Treats</a></li>
+            <li class="item-list-menu"><a href="#">Screenshots</a></li>
+            <li class="item-list-menu"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
