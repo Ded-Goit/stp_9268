@@ -55,7 +55,7 @@
 }
 .policy-item:hover {
   .policy-link {
-    color: var(--footer-navy);
+    color: var(--pink-hover);
   }
 }
 .footer-text,

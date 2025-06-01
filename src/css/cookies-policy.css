@@ -1,0 +1,126 @@
+.content-wrapper {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.custom-link-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  border: 4px solid var(--pink-hover);
+  border-radius: 32px;
+  padding: 12px 24px;
+  width: 288px;
+  height: 48px;
+  background: var(--pink);
+  margin-top: 24px;
+  padding: 0 16px;
+}
+.custom-link-button:hover,
+.custom-link-button:focus {
+  border: 4px solid var(--bright-navy);
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.button-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--black);
+}
+
+/* Стилі для десктопів */
+@media (min-width: 1200px) {
+  .content-wrapper {
+    gap: 24px;
+  }
+  .custom-link-button {
+    border: 2px solid var(--light-pink);
+    width: 187px;
+    height: 60px;
+    padding: 8px 24px;
+  }
+
+  .button-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+.title-block-polisy,
+.body-text,
+.list-body-text {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.body-text,
+.list-body-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+}
+ul.list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+.list-body-text {
+  line-height: 1.5;
+}
+.eight {
+  margin: 8px 0;
+}
+.manage-list-item {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--linc-color);
+}
+.links {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--bright-navy);
+}
+.cookies-title {
+  margin-top: 24px;
+}
+
+.cookies-contact-link {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .cookies-title {
+    margin-top: 48px;
+  }
+
+  .cookies-contact-link {
+    margin-bottom: 48px;
+  }
+}
