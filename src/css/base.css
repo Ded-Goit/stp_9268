@@ -20,6 +20,7 @@
   --green-pm: #34a853;
   --yellow-pm: #fbbc04;
   --red-pm: #ea4335;
+  --linc-color: #0f2c9b;
   --gradient-main: linear-gradient(359deg, #42edff 0%, #ffb9fe 100%);
 
   font-synthesis: none;
@@ -35,8 +36,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background: var(--gradient-main);
 }
 main {
   flex-grow: 1;
-  background: var(--gradient-main);
 }
