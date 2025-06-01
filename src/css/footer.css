@@ -1,7 +1,7 @@
 .footer-container {
   width: 100%;
   min-height: calc(100vw * (331 / 321));
-  background-color: var(--bright-navy);
+  background-color: var(--footer-navy);
   background-image: url('../img/footer/caramel_wave_mob.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,7 @@
   height: 20px;
   fill: var(--bright-navy);
 }
-/*color: var(--bright-navy);*/
+
 .social-icon:hover {
   fill: var(--white);
 }
