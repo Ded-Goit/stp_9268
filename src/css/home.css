@@ -3,7 +3,7 @@
   scroll-margin-top: 40px;
 }
 .container-home {
-  background-image: url('/img/home/home-mobile.png');
+  background-image: url('/img/home/home-mob.png');
   background-size: cover;
   padding-bottom: 24px;
   border-radius: 33px;
@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 1200px) {
   .container-home {
-    background-image: url('/img/home/home-desktop.png');
+    background-image: url('/img/home/home-desk.png');
     padding-left: 90px;
     padding-top: 30px;
   }
