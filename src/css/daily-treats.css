@@ -1,0 +1,160 @@
+#daily {
+  padding-top: 60px;
+}
+/* title and text */
+#daily h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+#daily h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--black);
+}
+/* Wrappers */
+.wrap-title-daily {
+  margin-bottom: 24px;
+}
+
+/* Items with description */
+.illustration-daily {
+  border: 5.09px solid var(--pink);
+  border-radius: 148px;
+  width: 136px;
+  height: 136px;
+  box-shadow: 0 0 5px 0 var(--pink-hover);
+  margin-bottom: 8px;
+}
+/* Desktop version */
+@media only screen and (min-width: 1200px) {
+  /* title and text */
+  #daily {
+    padding-top: 80px;
+    scroll-margin-top: 24px;
+  }
+  #daily h2 {
+    font-size: 44px;
+    margin-bottom: 32px;
+  }
+
+  #daily h3 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  /* Wrappers */
+
+  /* Items with description */
+}
+/*.daily-grid-container {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+}*/
+
+/* 📱 Мобільна версія (до 1199px) */
+/*@media (max-width: 1199px) {
+  .daily-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daily-item:nth-child(7) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}*/
+
+/* 💻 Десктопна версія (1200px+) */
+/*@media (min-width: 1200px) {
+  .daily-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'item1 item2 item3 item4 '
+      '.     item5 item6 item7';
+    justify-content: center;
+  }
+
+  .daily-item:nth-child(1) {
+    grid-area: item1;
+  }
+  .daily-item:nth-child(2) {
+    grid-area: item2;
+  }
+  .daily-item:nth-child(3) {
+    grid-area: item3;
+  }
+  .daily-item:nth-child(4) {
+    grid-area: item4;
+  }
+  .daily-item:nth-child(5) {
+    grid-area: item5;
+  }
+  .daily-item:nth-child(6) {
+    grid-area: item6;
+  }
+  .daily-item:nth-child(7) {
+    grid-area: item7;
+  }
+}*/
+.daily-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Кожен ряд */
+.daily-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* центрування для всіх */
+}
+
+/* Базова ширина елементів */
+.daily-item {
+  width: 136px;
+}
+
+/* 📱 Мобільна версія */
+@media (max-width: 1199px) {
+  .top-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bottom-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bottom-row .daily-item {
+    flex: 0 0 calc(50% - 8px); /* 2 в рядок */
+  }
+
+  .bottom-row .daily-item:nth-child(3) {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 💻 Десктопна версія */
+@media (min-width: 1200px) {
+  .top-row {
+    justify-content: space-between;
+  }
+
+  .bottom-row {
+    justify-content: center;
+  }
+
+  .daily-item {
+    width: 160px;
+  }
+}
