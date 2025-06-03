@@ -1,0 +1,101 @@
+#faq {
+  padding-top: 60px;
+}
+/* title and text */
+#faq h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--black);
+}
+
+#faq h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--black);
+  margin: 24px 32px;
+}
+
+/* Wrappers */
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  
+}
+
+.faq-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.illustration-faq {
+  width: 216px;
+  height: 226px;
+  border-radius: 32px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+[data-faq] {
+  background: #ffbde1;
+  border-radius: 32px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+[data-faq-toggle] {
+  display: block;
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-radius: 32px;
+  padding: 16px 24px;
+  width: 288px;
+  height: 74px;
+}
+
+[data-faq-content] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  
+}
+
+/* Додається padding при відкритті через JS */
+[data-faq].open [data-faq-content] {
+  padding: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  #faq {
+    padding-top: 80px;
+    scroll-margin-top: 40px;
+  }
+  .faq-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 1056px;
+  }
+  .illustration-faq {
+    width: 1056px;
+    height: 324px;
+    margin-bottom: 24px;
+  }
+  .faq-column {
+    width: 516px;
+
+  }
+}
