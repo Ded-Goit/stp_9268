@@ -57,6 +57,10 @@
   .item-nav-link:hover {
     color: var(--bright-navy);
   }
+
+  .logo {
+    width: 66px;
+  }
 }
 
 .container-header {
