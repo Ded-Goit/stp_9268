@@ -71,7 +71,7 @@
   /* title and text */
   #puzzle {
     padding-top: 80px;
-    scroll-margin-top: 24px;
+    scroll-margin-top: 40px;
   }
   #puzzle h2 {
     font-size: 44px;
