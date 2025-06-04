@@ -1,0 +1,50 @@
+.swiper {
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-pagination {
+  margin-top: 25px;
+}
+
+#candy {
+  padding-top: 60px;
+}
+
+.candy-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.motto-candy {
+  font-size: 22px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.each-world {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.slide-container img {
+  border: 8px solid #f75497;
+  border-radius: 169px;
+  width: 288px;
+  height: 140px;
+  object-fit: cover;
+}
