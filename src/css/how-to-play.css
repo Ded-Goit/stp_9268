@@ -1,5 +1,6 @@
 #how {
   padding-top: 60px;
+  scroll-margin-top: 40px;
 }
 
 .how-title {
@@ -15,6 +16,22 @@
   text-align: center;
   color: var(--black);
   margin-top: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  #how {
+    padding-top: 80px;
+  }
+
+  .how-title {
+    font-size: 44px;
+  }
+
+  .how-paragraph {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 32px;
+  }
 }
 
 .how-container-list {
@@ -41,6 +58,33 @@
 
 .text-container {
   order: 3;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-container-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .first-list {
+    order: 1;
+  }
+
+  .text-container {
+    order: 2;
+  }
+
+  .second-list {
+    order: 3;
+  }
+
+  .how-container-list ul {
+    gap: 8px;
+  }
+}
+
+.first-list .how-list-item:first-of-type span {
+  padding-left: 18px;
 }
 
 .span-for-list {
@@ -88,4 +132,43 @@
 .span-text-container {
   font-weight: 700;
   color: var(--black);
+}
+
+@media screen and (min-width: 1200px) {
+  .first-list .how-list-item:first-of-type span {
+    padding-left: 36px;
+  }
+
+  .span-for-list {
+    font-size: 70px;
+    line-height: 1.37;
+    padding-left: 26px;
+    padding-right: 39px;
+  }
+
+  .how-list-item img {
+    width: 46px;
+    bottom: 25px;
+  }
+
+  .text-container {
+    border: 8px solid #f75497;
+    border-radius: 169px;
+    padding: 89px 67px;
+    max-width: 336px;
+  }
+
+  .second-list .how-list-item:nth-child(2) img {
+    bottom: 25px;
+  }
+
+  .span-text-container {
+    display: block;
+    width: 202px;
+  }
+
+  .text-container img {
+    bottom: -34px;
+    right: -8px;
+  }
 }
