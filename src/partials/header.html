@@ -4,11 +4,7 @@
       <picture>
         <source
           media="(min-width: 1200px)"
-          srcset="
-            /img/header/logo-desktop.png    1x,
-            /img/header/logo-desktop@2x.png 2x
-          "
-          sizes="66px"
+          srcset="/img/header/logo-desktop@2x.png"
         />
         <source
           media="(min-width: 320px)"
@@ -17,7 +13,12 @@
             /img/header/logo-mobile@2x.png 2x
           "
         />
-        <img src="/img/header/logo-mobile.png" alt="logo" width="30px" />
+        <img
+          src="/img/header/logo-mobile.png"
+          alt="logo"
+          width="30px"
+          class="logo"
+        />
       </picture>
       <button type="button" class="burger-menu" data-action="open">
         <svg class="burger-menu-icon" width="24px" height="20px">
