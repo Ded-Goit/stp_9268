@@ -1,16 +1,46 @@
-.swiper {
+#candy .swiper {
   overflow: hidden;
-  padding-bottom: 24px;
+  min-height: 232px;
 }
 
-.swiper-slide {
+#candy .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
-.swiper-pagination {
-  margin-top: 25px;
+#candy .swiper-pagination-bullet {
+  border-radius: 8px;
+  width: 24px;
+  height: 4px;
+  background-color: var(--white);
+  opacity: 1;
+}
+
+#candy .swiper-pagination-bullet-active {
+  background-color: var(--bright-navy);
+}
+
+@media screen and (min-width: 1200px) {
+  #candy .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+    row-gap: 40px;
+    transform: none;
+    transition: none;
+  }
+
+  #candy .swiper-slide {
+    width: calc((100% - 48px) / 3);
+  }
+
+  #candy .swiper-pagination {
+    display: none;
+  }
 }
 
 #candy {
@@ -41,10 +71,89 @@
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  #candy {
+    padding-top: 80px;
+    scroll-margin-top: 40px;
+  }
+
+  .candy-title {
+    font-size: 44px;
+    margin-bottom: 32px;
+  }
+
+  .motto-candy {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
 .slide-container img {
   border: 8px solid #f75497;
   border-radius: 169px;
   width: 288px;
   height: 140px;
   object-fit: cover;
+}
+
+.slide-container {
+  text-align: center;
+}
+
+.span-description {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.slide-description {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .slide-container img {
+    width: 336px;
+    height: 241px;
+  }
+}
+
+.last-item-container {
+  position: relative;
+  border: 6px solid #f75497;
+  border-radius: 128px;
+  padding: 28px 68px;
+  width: 288px;
+  max-height: 140px;
+  background-color: var(--pink);
+  text-align: center;
+}
+
+.last-paragraph-swiper {
+  font-weight: 700;
+  width: 152px;
+  color: var(--black);
+}
+
+.last-item-container img {
+  position: absolute;
+  right: 16px;
+  top: 102px;
+}
+
+@media screen and (min-width: 1200px) {
+  .last-item-container {
+    border-radius: 169px;
+    padding: 89px 67px;
+    width: 336px;
+    max-height: 241px;
+  }
+
+  .last-paragraph-swiper {
+    width: 202px;
+  }
+
+  .last-item-container img {
+    right: 0;
+    top: 168px;
+  }
 }

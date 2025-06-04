@@ -1,6 +1,5 @@
 #how {
   padding-top: 60px;
-  scroll-margin-top: 40px;
 }
 
 .how-title {
@@ -21,6 +20,7 @@
 @media screen and (min-width: 1200px) {
   #how {
     padding-top: 80px;
+    scroll-margin-top: 40px;
   }
 
   .how-title {

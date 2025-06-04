@@ -127,7 +127,7 @@
   transition: border-color 200ms ease-in-out;
 }
 
-.play-link:hover {
+.play-link:active {
   border-color: var(--bright-navy);
 }
 
@@ -145,6 +145,10 @@
   }
   .play-link picture {
     width: 24px;
+  }
+
+  .play-link:hover {
+    border-color: var(--bright-navy);
   }
 
   .wrapper-link {
