@@ -23,7 +23,6 @@
   margin-bottom: 24px;
 }
 .wrap-text-container {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +32,6 @@
   width: 202px;
   height: 202px;
   background: var(--pink);
-  text-align: center;
-  padding-top: 8px;
-  padding-right: 28px;
-}
-
-.wrap-text-container img {
-  position: absolute;
-  right: 10px;
-  top: 160px;
 }
 .daily-flex-wrapper {
   display: flex;
@@ -78,7 +68,9 @@
 /* Items with description */
 .wrap-span-text {
   font-weight: 700;
-  width: 132px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 26px;
 }
 .illustration-daily {
   border: 5.1px solid var(--pink);
@@ -132,6 +124,16 @@
     margin-bottom: 8px;
   }
 }
+.daily-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.daily-flex-wrapper .daily-item {
+  flex-basis: 136px;
+}
 
 /* desktop */
 @media (min-width: 1200px) {
@@ -156,5 +158,24 @@
     margin-bottom: 8px;
     width: 246px;
     height: 246px;
+  }
+  .daily-flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .daily-flex-wrapper .daily-item {
+    flex-basis: 246px;
+  }
+  .wrap-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-span-text {
+    padding-top: 112px;
+    padding-bottom: 16px;
   }
 }
