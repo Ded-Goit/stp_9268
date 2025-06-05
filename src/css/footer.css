@@ -1,5 +1,11 @@
 .section-footer {
-  padding: 60px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-footer {
+    margin-top: 80px;
+  }
 }
 .footer-container {
   background-color: var(--footer-navy);
