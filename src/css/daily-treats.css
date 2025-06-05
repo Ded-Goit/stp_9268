@@ -22,15 +22,66 @@
 .wrap-title-daily {
   margin-bottom: 24px;
 }
+.wrap-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-end;
+  border: 6px solid var(--pink-hover);
+  border-radius: 128px;
+  width: 202px;
+  height: 202px;
+  background: var(--pink);
+}
+.daily-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.daily-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.daily-item {
+  width: 136px;
+}
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bottom-row .daily-item {
+  flex: 0 0 calc(50% - 8px); /* 2 */
+}
+
+.bottom-row .daily-item:nth-child(3) {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /* Items with description */
+.wrap-span-text {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 26px;
+}
 .illustration-daily {
-  border: 5.09px solid var(--pink);
+  border: 5.1px solid var(--pink);
   border-radius: 148px;
   width: 136px;
   height: 136px;
   box-shadow: 0 0 5px 0 var(--pink-hover);
   margin-bottom: 8px;
+}
+.daily-item-text {
+  text-align: center;
 }
 /* Desktop version */
 @media only screen and (min-width: 1200px) {
@@ -49,112 +100,53 @@
     line-height: 1.2;
   }
   /* Wrappers */
-
-  /* Items with description */
-}
-/*.daily-grid-container {
-  display: grid;
-  gap: 16px;
-  justify-content: center;
-}*/
-
-/* 📱 Мобільна версія (до 1199px) */
-/*@media (max-width: 1199px) {
-  .daily-grid-container {
-    grid-template-columns: repeat(2, 1fr);
+  .wrap-text-container {
+    border: 8px solid var(--pink-hover);
+    border-radius: 149px;
+    width: 246px;
+    height: 246px;
+    box-shadow: 0 0 8px 0 var(--pink-hover);
+    background: var(--pink);
   }
 
-  .daily-item:nth-child(7) {
-    grid-column: 1 / -1;
-    justify-self: center;
+  .wrap-span-text {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 102px;
+    padding-bottom: 52px;
   }
-}*/
-
-/* 💻 Десктопна версія (1200px+) */
-/*@media (min-width: 1200px) {
-  .daily-grid-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      'item1 item2 item3 item4 '
-      '.     item5 item6 item7';
-    justify-content: center;
-  }
-
-  .daily-item:nth-child(1) {
-    grid-area: item1;
-  }
-  .daily-item:nth-child(2) {
-    grid-area: item2;
-  }
-  .daily-item:nth-child(3) {
-    grid-area: item3;
-  }
-  .daily-item:nth-child(4) {
-    grid-area: item4;
-  }
-  .daily-item:nth-child(5) {
-    grid-area: item5;
-  }
-  .daily-item:nth-child(6) {
-    grid-area: item6;
-  }
-  .daily-item:nth-child(7) {
-    grid-area: item7;
-  }
-}*/
-.daily-flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-/* Кожен ряд */
-.daily-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center; /* центрування для всіх */
-}
-
-/* Базова ширина елементів */
-.daily-item {
-  width: 136px;
-}
-
-/* 📱 Мобільна версія */
-@media (max-width: 1199px) {
-  .top-row {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .bottom-row {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .bottom-row .daily-item {
-    flex: 0 0 calc(50% - 8px); /* 2 в рядок */
-  }
-
-  .bottom-row .daily-item:nth-child(3) {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
+  .illustration-daily {
+    border: 8px solid var(--pink);
+    border-radius: 148px;
+    width: 136px;
+    height: 136px;
+    box-shadow: 0 0 5px 0 var(--pink-hover);
+    margin-bottom: 8px;
   }
 }
 
-/* 💻 Десктопна версія */
+/* desktop */
 @media (min-width: 1200px) {
-  .top-row {
-    justify-content: space-between;
+  #daily {
+    padding-top: 80px;
+    scroll-margin-top: 40px;
+    text-align: center;
+  }
+  #daily h2 {
+    font-size: 44px;
+    margin-bottom: 32px;
   }
 
-  .bottom-row {
-    justify-content: center;
+  #daily h3 {
+    font-size: 28px;
+    margin-bottom: 24px;
   }
-
-  .daily-item {
-    width: 160px;
+  .illustration-daily {
+    border: 8px solid var(--pink);
+    border-radius: 148px;
+    box-shadow: 0 0 5px 0 var(--pink-hover);
+    margin-bottom: 8px;
+    width: 246px;
+    height: 246px;
   }
 }
