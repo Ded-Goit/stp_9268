@@ -24,7 +24,7 @@
 .faq-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;  
+  gap: 16px;
 }
 
 .faq-column {
@@ -69,7 +69,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
-  
 }
 
 /* Додається padding при відкритті через JS */
@@ -77,6 +76,11 @@
   padding: 1rem;
 }
 
+.ac-icon-up use {
+  width: 40px;
+  height: 40px;
+  stroke: var(--bright-navy);
+}
 /* Desktop */
 @media (min-width: 1200px) {
   #faq {
@@ -96,6 +100,5 @@
   }
   .faq-column {
     width: 516px;
-
   }
 }

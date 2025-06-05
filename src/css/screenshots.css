@@ -164,4 +164,7 @@
   .screenshots-container {
     background-image: url('../img/screenshots/scrshots_desk.png');
   }
+  .swiper {
+    display: none;
+  }
 }
