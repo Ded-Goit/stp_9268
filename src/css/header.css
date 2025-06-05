@@ -3,6 +3,7 @@
   border-bottom: 4px solid #ffa1cb;
   border-radius: 0 0 20px 20px;
   padding: 8px 0 8px 0;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 9999;

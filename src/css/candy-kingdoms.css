@@ -89,11 +89,12 @@
 }
 
 .slide-img {
-  border: 8px solid #f75497;
+  border: 8px solid var(--pink-hover);
   border-radius: 169px;
   width: 288px;
   height: 140px;
   object-fit: cover;
+  background-color: var(--pink-hover);
 }
 
 .slide-container {
