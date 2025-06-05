@@ -83,6 +83,7 @@
   padding: 12px 24px;
   background-color: var(--pink);
   width: 100%;
+  color: #020407;
 }
 
 .btn-cook-accept:active {
@@ -101,6 +102,7 @@
   padding: 12px 24px;
   background: rgba(254, 254, 254, 0.54);
   width: 100%;
+  color: #020407;
 }
 
 .btn-cook-decline:active {
