@@ -47,6 +47,10 @@
   background-color: var(--bright-navy);
 }
 /* Wrappers */
+.desktop-screenshot-row {
+  display: none;
+}
+
 #screenshots .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -65,24 +69,6 @@
   align-items: center;
 }
 
-/*
-@media screen and (min-width: 1200px) {
-  #screenshots {
-    padding-top: 80px;
-    scroll-margin-top: 40px;
-  }
-
-  .candy-title {
-    font-size: 44px;
-    margin-bottom: 32px;
-  }
-
-  .motto-candy {
-    font-size: 28px;
-    margin-bottom: 24px;
-  }
-}*/
-
 .scr-slide-container img {
   width: 160px;
   height: 336px;
@@ -95,54 +81,7 @@
 .scr-slide-description {
   margin-top: 8px;
 }
-/*
-@media screen and (min-width: 1200px) {
-  .slide-container img {
-    width: 160px;
-    height: 336px;
-  }
-}*/
 
-/*.scr-last-item-container {
-  position: relative;
-  border: 6px solid #f75497;
-  border-radius: 128px;
-  padding: 28px 68px;
-  width: 288px;
-  max-height: 140px;
-  background-color: var(--pink);
-  text-align: center;
-}
-
-.scr-last-paragraph-swiper {
-  font-weight: 700;
-  width: 152px;
-  color: var(--black);
-}
-
-.scr-last-item-container img {
-  position: absolute;
-  right: 16px;
-  top: 102px;
-}*/
-/*
-@media screen and (min-width: 1200px) {
-  .last-item-container {
-    border-radius: 169px;
-    padding: 89px 67px;
-    width: 336px;
-    max-height: 241px;
-  }
-
-  .last-paragraph-swiper {
-    width: 202px;
-  }
-
-  .last-item-container img {
-    right: 0;
-    top: 168px;
-  }
-}*/
 /* Desktop version */
 @media only screen and (min-width: 1200px) {
   /* title and text */
@@ -158,13 +97,33 @@
     font-size: 28px;
     line-height: 1.2;
     margin-top: 32px;
-    margin-bottom: 468px;
+    margin-bottom: 24px;
   }
   /* Wrappers */
-  .screenshots-container {
-    background-image: url('../img/screenshots/scrshots_desk.png');
+  #screenshots {
+    background-image: url('/img/screenshots/pinc_frame_desk.png');
+    background-repeat: no-repeat;
+    background-size: 1200px 182px;
+    background-position: bottom center;
   }
-  .swiper {
+  #screenshots .sw-scr {
     display: none;
+  }
+  .desktop-screenshot-row {
+    display: flex;
+    gap: 24px;
+
+    align-items: center;
+    width: 1200px;
+    flex-wrap: nowrap;
+    padding-bottom: 24px;
+    margin: 0 auto;
+  }
+
+  .scr-slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 191px;
   }
 }
