@@ -10,7 +10,7 @@ document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
       if (faq !== current) {
         faq.classList.remove('open');
         content.style.maxHeight = null;
-        icon?.setAttribute('href', '#icon-plus');
+        icon?.setAttribute('href', '/img/sprite.svg#icon-plus');
       }
     });
 
@@ -28,10 +28,10 @@ document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
       }
 
       currentContent.style.maxHeight = maxHeight;
-      currentIcon?.setAttribute('href', '#icon-minus');
+      currentIcon?.setAttribute('href', '/img/sprite.svg#icon-minus');
     } else {
       currentContent.style.maxHeight = null;
-      currentIcon?.setAttribute('href', '#icon-plus');
+      currentIcon?.setAttribute('href', '/img/sprite.svg#icon-plus');
     }
   });
 });
