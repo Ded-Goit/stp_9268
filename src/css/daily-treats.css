@@ -23,6 +23,7 @@
   margin-bottom: 24px;
 }
 .wrap-text-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +33,15 @@
   width: 202px;
   height: 202px;
   background: var(--pink);
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 28px;
+}
+
+.wrap-text-container img {
+  position: absolute;
+  right: 10px;
+  top: 160px;
 }
 .daily-flex-wrapper {
   display: flex;
@@ -68,9 +78,7 @@
 /* Items with description */
 .wrap-span-text {
   font-weight: 700;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 26px;
+  width: 132px;
 }
 .illustration-daily {
   border: 5.1px solid var(--pink);
