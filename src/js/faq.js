@@ -1,3 +1,4 @@
+import icfaq from '../img/sprite.svg';
 document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
   toggle.addEventListener('click', () => {
     const current = toggle.closest('[data-faq]');
@@ -10,7 +11,7 @@ document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
       if (faq !== current) {
         faq.classList.remove('open');
         content.style.maxHeight = null;
-        icon?.setAttribute('href', '#icon-plus');
+        icon?.setAttribute('href', `${icfaq}#icon-plus`);
       }
     });
 
@@ -28,10 +29,10 @@ document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
       }
 
       currentContent.style.maxHeight = maxHeight;
-      currentIcon?.setAttribute('href', '#icon-minus');
+      currentIcon?.setAttribute('href', `${icfaq}#icon-minus`);
     } else {
       currentContent.style.maxHeight = null;
-      currentIcon?.setAttribute('href', '#icon-plus');
+      currentIcon?.setAttribute('href', `${icfaq}#icon-plus`);
     }
   });
 });
