@@ -11,13 +11,13 @@
   background-color: var(--footer-navy);
   background-image: url('../img/footer/caramel_wave_mob.png');
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 24px 16px 0px 16px;
   display: flex;
+  row-gap: 42px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
 }
 
 /* Retina */
@@ -50,9 +50,8 @@
 .policy-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 32px;
   width: 288px;
-  margin: 32px 0;
   text-align: center;
 }
 .policy-item:hover {
@@ -66,7 +65,7 @@
   color: var(--white);
 }
 .social {
-  flex-direction: column;
+  text-align: center;
 }
 .social-list {
   display: flex;
@@ -98,7 +97,8 @@
 @media screen and (min-width: 1200px) {
   .footer-container {
     background-image: url('../img/footer/caramel_wave_desk.png');
-    min-height: calc(100vw * (892 / 4097));
+    padding-top: 32px;
+    background-position: center calc(100% + 35px);
   }
   .footer-text-container {
     flex-direction: row;
@@ -109,7 +109,7 @@
     justify-content: center;
     gap: 176.5px;
     width: auto;
-    margin: 32px auto;
+    margin: 26px auto;
   }
 
   .social {
