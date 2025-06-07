@@ -1,26 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".cookies-wrapper");
-    const key = "cookiesAccepted";
-    const value = localStorage.getItem(key);
+document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.querySelector('.cookies-wrapper');
+  const key = 'cookiesAccepted';
 
-    const show = () => {
-      wrapper.style.opacity = "1";
-      wrapper.style.visibility = "visible";
-      document.body.style.overflow = "hidden";
-    };
+  if (!wrapper) return;
 
-    const hide = () => {
-      wrapper.style.opacity = "0";
-      wrapper.style.visibility = "hidden";
-      document.body.style.overflow = "";
-    };
+  const show = () => {
+    wrapper.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  };
 
-    if (value !== "true") show();
+  const hide = () => {
+    wrapper.classList.remove('visible');
+    document.body.style.overflow = '';
+  };
 
-    document.querySelectorAll("[data-action]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        localStorage.setItem(key, btn.dataset.action);
-        hide();
-      });
+  let value;
+  try {
+    value = localStorage.getItem(key);
+  } catch (e) {
+    console.warn('LocalStorage unavailable', e);
+  }
+
+  if (!value || value !== 'true') show();
+
+  document.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const action = btn.dataset.action;
+      try {
+        localStorage.setItem(key, action === 'true' ? 'true' : 'false');
+      } catch (e) {
+        console.warn('LocalStorage error', e);
+      }
+      hide();
     });
   });
+});
