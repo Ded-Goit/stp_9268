@@ -1,38 +1,49 @@
 import icfaq from '../img/sprite.svg';
+
 document.querySelectorAll('[data-faq-toggle]').forEach(toggle => {
   toggle.addEventListener('click', () => {
     const current = toggle.closest('[data-faq]');
     const currentContent = current.querySelector('[data-faq-content]');
     const currentIcon = toggle.querySelector('use');
 
+    // Закриваємо всі відкриті
     document.querySelectorAll('[data-faq]').forEach(faq => {
       const content = faq.querySelector('[data-faq-content]');
       const icon = faq.querySelector('use');
+
       if (faq !== current) {
         faq.classList.remove('open');
-        content.style.maxHeight = null;
+        content.style.height = null;
+        content.style.overflow = 'hidden';
         icon?.setAttribute('href', `${icfaq}#icon-plus`);
       }
     });
 
-    const isOpen = current.classList.toggle('open');
+    const isOpen = current.classList.contains('open');
 
     if (isOpen) {
-      let maxHeight;
-
-      if (window.innerWidth <= 320) {
-        maxHeight = '149px';
-      } else if (window.innerWidth >= 1200) {
-        maxHeight = '130px';
-      } else {
-        maxHeight = currentContent.scrollHeight + 'px';
-      }
-
-      currentContent.style.maxHeight = maxHeight;
-      currentIcon?.setAttribute('href', `${icfaq}#icon-minus`);
-    } else {
-      currentContent.style.maxHeight = null;
+      // Якщо вже відкрито — закриваємо
+      current.classList.remove('open');
+      currentContent.style.height = null;
+      currentContent.style.overflow = 'hidden';
       currentIcon?.setAttribute('href', `${icfaq}#icon-plus`);
+    } else {
+      // Відкриваємо
+      current.classList.add('open');
+
+      const scrollHeight = currentContent.scrollHeight;
+      currentContent.style.height = scrollHeight + 'px';
+      currentContent.style.overflow = 'visible';
+      currentIcon?.setAttribute('href', `${icfaq}#icon-minus`);
+
+      // Опція: після анімації обнуляємо висоту, щоб дозволити адаптацію при зміні вмісту
+      currentContent.addEventListener(
+        'transitionend',
+        function handleTransition() {
+          currentContent.style.height = 'auto';
+          currentContent.removeEventListener('transitionend', handleTransition);
+        }
+      );
     }
   });
 });

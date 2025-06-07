@@ -2,7 +2,7 @@
   padding-top: 60px;
   background-image: url('../img/screenshots/pinc_frame_mob.png');
   background-repeat: no-repeat;
-  background-size: 320px 198px;
+  background-size: auto 198px;
   background-position: bottom center;
 }
 
@@ -113,7 +113,7 @@
   #screenshots {
     background-image: url('/img/screenshots/pinc_frame_desk.png');
     background-repeat: no-repeat;
-    background-size: 1200px 182px;
+    background-size: auto 182px;
     background-position: bottom center;
   }
   #screenshots .sw-scr {
