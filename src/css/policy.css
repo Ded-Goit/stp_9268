@@ -1,4 +1,4 @@
-.content-wrap-pol {
+.content-wrapper-pol {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -53,14 +53,12 @@
 }
 .title-block-pol,
 .title-block-polisy-pol,
-.body-text-pol,
 .list-body-text-pol {
   color: var(--black);
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.3;
 }
-.body-text-pol,
+
 .list-body-text-pol {
   font-weight: 400;
   font-size: 16px;
@@ -76,6 +74,9 @@ ul.list-pol {
 }
 .eight-pol {
   margin: 8px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
 }
 .manage-list-item-pol {
   font-weight: 400;
@@ -105,7 +106,6 @@ ul.list-pol {
 @media screen and (min-width: 1200px) {
   .content-wrapper-pol {
     gap: 24px;
-    padding: 0 72px;
     margin-top: 40px;
   }
   .custom-link-button-pol {

@@ -1,6 +1,5 @@
 #home {
   padding-top: 16px;
-  scroll-margin-top: 40px;
 }
 .container-home {
   background-image: url('/img/home/home-mob.png');
@@ -17,6 +16,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  #home {
+    scroll-margin-top: 40px;
+  }
+
   .container-home {
     background-image: url('/img/home/home-desk.png');
     padding-left: 90px;

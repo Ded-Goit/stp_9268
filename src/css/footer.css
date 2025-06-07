@@ -90,7 +90,7 @@
   fill: var(--bright-navy);
 }
 
-.social-icon:hover {
+.social-icon:active {
   fill: var(--white);
 }
 
@@ -100,6 +100,11 @@
     padding-top: 32px;
     background-position: center calc(100% + 35px);
   }
+
+  .social-icon:hover {
+    fill: var(--white);
+  }
+
   .footer-text-container {
     flex-direction: row;
     justify-content: center;
