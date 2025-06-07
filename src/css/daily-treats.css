@@ -17,6 +17,8 @@
   line-height: 1.3;
   text-align: center;
   color: var(--black);
+  width: 232px;
+  margin: 0 auto;
 }
 /* Wrappers */
 .wrap-title-daily {
@@ -98,6 +100,7 @@
   #daily h3 {
     font-size: 28px;
     line-height: 1.2;
+    width: auto;
   }
   /* Wrappers */
   .wrap-text-container {
