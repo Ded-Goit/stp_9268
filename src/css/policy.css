@@ -6,27 +6,39 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0 16px;
+  margin-top: 24px;
 }
 
 .custom-link-button {
+  display: inline-flex;
+  width: 288px;
+  height: 48px;
+  border: 2px solid var(--light-pink);
+  border-radius: 32px;
+  text-decoration: none;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-custom-link-button {
   display: flex;
   align-items: center;
   gap: 16px;
-  text-decoration: none;
+  width: 288px;
+  height: 44px;
+  padding: 12px 24px;
   border: 4px solid var(--pink-hover);
   border-radius: 32px;
-  padding: 12px 24px;
-  width: 288px;
-  height: 48px;
   background: var(--pink);
-  margin-top: 24px;
-  padding: 0 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
-.custom-link-button:hover,
-.custom-link-button:focus {
-  border: 4px solid var(--bright-navy);
+.custom-link-button:hover .inner-custom-link-button,
+.custom-link-button:focus .inner-custom-link-button {
+  border-color: var(--bright-navy);
 }
-
 .button-icon {
   width: 24px;
   height: 24px;
@@ -39,34 +51,9 @@
   text-align: center;
   color: var(--black);
 }
-
-/* Стилі для десктопів */
-@media (min-width: 1200px) {
-  .content-wrapper {
-    gap: 24px;
-  }
-  .custom-link-button {
-    border: 2px solid var(--light-pink);
-    width: 187px;
-    height: 60px;
-    padding: 8px 24px;
-  }
-
-  .button-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .button-text {
-    font-size: 16px;
-    white-space: nowrap;
-  }
-}
-
 .title-block-polisy,
 .body-text,
 .list-body-text {
-  font-family: 'Fredoka', sans-serif;
   color: var(--black);
   font-weight: 600;
   font-size: 18px;
@@ -90,7 +77,6 @@ ul.list {
   margin: 8px 0;
 }
 .manage-list-item {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -99,28 +85,54 @@ ul.list {
   color: var(--linc-color);
 }
 .links {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--bright-navy);
 }
-.cookies-title {
+.policy-title {
   margin-top: 24px;
+  text-align: center;
 }
 
-.cookies-contact-link {
+.policy-contact-link {
   display: inline-block;
   margin-bottom: 24px;
 }
 
-@media (min-width: 1200px) {
-  .cookies-title {
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    gap: 24px;
+    padding: 0 72px;
+    margin-top: 40px;
+  }
+  .custom-link-button {
+    width: 187px;
+    height: 60px;
+  }
+
+  .inner-custom-link-button {
+    width: 187px;
+    height: 56px;
+    padding-left: 20px;
+  }
+
+  .button-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .button-text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .policy-title {
     margin-top: 48px;
   }
 
-  .cookies-contact-link {
+  .policy-contact-link {
     margin-bottom: 48px;
   }
 }
