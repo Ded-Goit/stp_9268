@@ -1,6 +1,5 @@
 #sweet {
   padding-top: 60px;
-  scroll-margin-top: 20px;
 }
 
 .sweet-title {
@@ -21,6 +20,7 @@
 @media screen and (min-width: 1200px) {
   #sweet {
     padding-top: 80px;
+    scroll-margin-top: 40px;
   }
 
   .sweet-title {
@@ -30,10 +30,6 @@
 
   .sweet-paragraph {
     font-size: 28px;
-  }
-
-  #sweet {
-    scroll-margin-top: 50px;
   }
 }
 
