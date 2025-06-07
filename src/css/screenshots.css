@@ -2,8 +2,9 @@
   padding-top: 60px;
   background-image: url('../img/screenshots/pinc_frame_mob.png');
   background-repeat: no-repeat;
-  background-size: auto 198px;
+  background-size: 100% 198px;
   background-position: bottom center;
+  width: 100%;
 }
 
 /* title and text */
@@ -113,7 +114,7 @@
   #screenshots {
     background-image: url('/img/screenshots/pinc_frame_desk.png');
     background-repeat: no-repeat;
-    background-size: auto 182px;
+    background-size: 100% 182px;
     background-position: bottom center;
   }
   #screenshots .sw-scr {
