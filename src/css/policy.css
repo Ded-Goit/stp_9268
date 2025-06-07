@@ -52,6 +52,7 @@
   color: var(--black);
 }
 .title-block-pol,
+.after-dot-pol,
 .title-block-polisy-pol,
 .list-body-text-pol {
   color: var(--black);
