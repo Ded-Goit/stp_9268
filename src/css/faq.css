@@ -70,10 +70,12 @@
   transition: height 0.3s ease;
 }
 
-/* Додається padding при відкритті через JS */
+/* add padding with open JS */
 [data-faq].open [data-faq-content] {
-  padding: 1rem;
-  margin: 8px 0;
+  padding: 0 24px 16px 24px;
+}
+[data-faq].open [data-faq-toggle] {
+  padding: 16px 24px 0 24px;
 }
 
 [data-faq-toggle] svg {
@@ -88,7 +90,6 @@
   display: block;
 }
 .ac-icon-up use {
-  
   stroke: var(--bright-navy);
 }
 /* Desktop */
@@ -113,12 +114,14 @@
   }
   [data-faq-toggle] {
     border-radius: 32px;
-    padding: 24px 40px;
+    padding: 24px 40px 24px 40px;
     width: 516px;
     height: 72px;
   }
   [data-faq].open [data-faq-content] {
-    padding: 24px 40px;
-    margin: 8px 0;
+    padding: 0 40px 24px 40px;
+  }
+  [data-faq].open [data-faq-toggle] {
+    padding: 24px 40px 0 40px;
   }
 }
