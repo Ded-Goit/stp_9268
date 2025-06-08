@@ -14,24 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   };
 
-  let value;
-  try {
-    value = localStorage.getItem(key);
-  } catch (e) {
-    console.warn('LocalStorage unavailable', e);
+  // Checking if the user has already selected
+  const savedValue = localStorage.getItem(key);
+  if (savedValue === null) {
+    show(); // Show modal only if not already selected
   }
 
-  if (!value || value !== 'true') show();
-
+  // Click processing
   document.querySelectorAll('[data-action]').forEach(btn => {
     btn.addEventListener('click', () => {
-      const action = btn.dataset.action;
-      try {
-        localStorage.setItem(key, action === 'true' ? 'true' : 'false');
-      } catch (e) {
-        console.warn('LocalStorage error', e);
-      }
+      const action = btn.dataset.action; // "true" або "false"
+      localStorage.setItem(key, action);
       hide();
     });
+  });
+  // Closing on Esc
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && wrapper.classList.contains('visible')) {
+      hide();
+    }
   });
 });
